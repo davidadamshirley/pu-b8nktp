@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f5f5f7;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif;color:#1d1d1f;-webkit-font-smoothing:antialiased}
+.wrap{max-width:390px;margin:0 auto;padding:28px 20px 40px}
+.header{text-align:center;margin-bottom:28px}
+.logo{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:#8E5CF7;color:#fff;border-radius:12px;font-weight:700;font-size:20px;margin-bottom:14px}
+h1{font-size:28px;font-weight:700;letter-spacing:-0.03em;margin-bottom:4px}
+.sub{font-size:15px;color:#86868b;font-weight:400}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:32px}
+.stat{background:#fff;border-radius:16px;padding:16px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.stat b{display:block;font-size:28px;font-weight:700;letter-spacing:-0.02em;color:#1d1d1f}
+.stat span{font-size:12px;color:#86868b;font-weight:500}
+.section{font-size:13px;font-weight:600;color:#86868b;text-transform:uppercase;letter-spacing:.04em;margin:0 0 12px 4px}
+.card{background:#fff;border-radius:20px;padding:20px;margin-bottom:14px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px}
+.title{font-size:17px;font-weight:700;letter-spacing:-0.02em;line-height:1.3}
+.emp{font-size:13px;color:#86868b;margin-top:3px}
+.badge{font-size:11px;font-weight:700;padding:5px 10px;border-radius:980px;white-space:nowrap}
+.bA{background:#d1fadf;color:#087443}.bC{background:#ffe4e1;color:#c01c1c}.bV{background:#d0f0fd;color:#0077a8}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.meta div{font-size:14px;font-weight:500}
+.meta label{display:block;font-size:11px;color:#86868b;font-weight:500;margin-bottom:2px;text-transform:uppercase;letter-spacing:.03em}
+.close{display:inline-block;background:#ff3b30;color:#fff;font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px}
+.note{font-size:13px;padding:10px 12px;border-radius:12px;margin-top:8px;line-height:1.4}
+.fit{background:#f0faf4;color:#1d1d1f}.warn{background:#fff8ee;color:#1d1d1f}
+.note b{font-weight:600}
+.btns{display:flex;gap:8px;margin-top:16px}
+.btn{flex:1;text-align:center;text-decoration:none;font-size:14px;font-weight:600;padding:11px 16px;border-radius:980px}
+.btn-p{background:#8E5CF7;color:#fff}.btn-s{background:#f5f5f7;color:#1d1d1f}
+.unv{background:#fff;border-radius:20px;padding:18px 20px;margin-bottom:14px;box-shadow:0 2px 12px rgba(0,0,0,.06);font-size:14px;color:#86868b;line-height:1.5}
+.foot{text-align:center;font-size:11px;color:#aeaeb2;margin-top:28px;line-height:1.5}
+
+.logo{background:linear-gradient(145deg,#8E5CF7,#5B2DC4);box-shadow:0 4px 12px rgba(142,92,247,0.28)}
+.bX{background:rgba(142,92,247,0.14);color:#5B2DC4}
+.bN{background:#f0f0f2;color:#6e6e73}
+.ex{display:flex;align-items:center;gap:8px;background:#fff;border:1.5px dashed rgba(142,92,247,0.55);border-radius:14px;padding:10px 14px;margin:-12px 0 22px;font-size:12px;color:#6e6e73;line-height:1.4}
+.ex b{color:#5B2DC4;font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:11px;white-space:nowrap}
+.exm{color:#5B2DC4;font-weight:600}
+.list{list-style:none}
+.list li{display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid #f0f0f2;font-size:15px;font-weight:500}
+.list li:first-child{border-top:0;padding-top:2px}
+.list li:last-child{padding-bottom:0}
+.chk{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid rgba(142,92,247,0.55)}
+.chk.on{background:#8E5CF7;border-color:#8E5CF7;position:relative}
+.chk.on:after{content:'';position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.list .ph{color:#86868b}
+.list small{margin-left:auto;font-size:12px;color:#86868b;font-weight:500;white-space:nowrap}
+.lang{padding:12px 0;border-top:1px solid #f0f0f2}
+.lang:first-of-type{border-top:0;padding-top:0}
+.lang:last-of-type{padding-bottom:0}
+.lang p{font-size:15px;font-weight:600;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;padding:6px 11px;border-radius:980px;background:#f5f5f7;color:#1d1d1f}
+.chip i{width:8px;height:8px;border-radius:50%;border:1.5px solid #8E5CF7}
+.chip.on{background:rgba(142,92,247,0.14);color:#5B2DC4}.chip.on i{background:#8E5CF7}
+.dl{display:inline-block;background:#8E5CF7;color:#fff;font-size:12px;font-weight:700;padding:3px 9px;border-radius:980px}
+.bar{height:6px;background:#f0f0f2;border-radius:6px;overflow:hidden;margin-top:6px}.bar i{display:block;height:100%;background:#8E5CF7;border-radius:6px}
+
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.ok{background:#30d158}.wn{background:#ff9f0a}.er{background:#ff3b30}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div class="logo">P</div>
+    <h1>Publications</h1>
+    <p class="sub">Journal &amp; special-issue calls · Wed 14 Oct 2026</p>
+  </div>
+  <div class="ex"><b>Example</b><span>Placeholder layout. Items in [brackets] are sample content, not real data.</span></div>
+  <div class="stats"><div class="stat"><b>[3]</b><span>open calls</span></div><div class="stat"><b>[2]</b><span>high fit</span></div><div class="stat"><b>[1]</b><span>due &lt; 30 days</span></div><div class="stat"><b>[24]</b><span>tracked total</span></div></div>
+  <p class="section">Strong fit</p>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="title">[Example call title 1]</p><p class="emp">[Journal name] · Special issue</p></div>
+      <span class="badge bX">High fit</span>
+    </div>
+    <div class="meta">
+      <div><label>Deadline</label><span class="dl">[DD Mon] · [N] days</span></div>
+      <div><label>Fit score</label>9/10<div class="bar"><i style="width:90%"></i></div></div>
+      <div><label>Type</label>[Special issue]</div>
+      <div><label>Publisher</label>[Publisher]</div>
+    </div>
+    <div class="note fit"><b>Why it fits:</b> [example: matches topic X of the thesis]</div>
+    <div class="btns"><a class="btn btn-p" href="#">Open call</a><a class="btn btn-s" href="#">Guidelines</a></div>
+  </div>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="title">[Example call title 2]</p><p class="emp">[Journal name] · Special issue</p></div>
+      <span class="badge bX">High fit</span>
+    </div>
+    <div class="meta">
+      <div><label>Deadline</label><span class="dl">[DD Mon] · [N] days</span></div>
+      <div><label>Fit score</label>8/10<div class="bar"><i style="width:80%"></i></div></div>
+      <div><label>Type</label>[Special issue]</div>
+      <div><label>Publisher</label>[Publisher]</div>
+    </div>
+    <div class="note fit"><b>Why it fits:</b> [example: matches topic X of the thesis]</div>
+    <div class="btns"><a class="btn btn-p" href="#">Open call</a><a class="btn btn-s" href="#">Guidelines</a></div>
+  </div>
+  <p class="section">Worth a look</p>
+  <div class="card">
+    <div class="card-top">
+      <div><p class="title">[Example call title 3]</p><p class="emp">[Journal name] · Special issue</p></div>
+      <span class="badge bN">Medium</span>
+    </div>
+    <div class="meta">
+      <div><label>Deadline</label><span class="dl">[DD Mon] · [N] days</span></div>
+      <div><label>Fit score</label>6/10<div class="bar"><i style="width:60%"></i></div></div>
+      <div><label>Type</label>[Special issue]</div>
+      <div><label>Publisher</label>[Publisher]</div>
+    </div>
+    <div class="note fit"><b>Why it fits:</b> [example: matches topic X of the thesis]</div>
+    <div class="btns"><a class="btn btn-p" href="#">Open call</a><a class="btn btn-s" href="#">Guidelines</a></div>
+  </div>
+  <p class="section">Watchlist</p>
+  <div class="unv">[Example: 2 journals with no open call yet, check monthly]</div>
+
+  <p class="foot">Example layout · placeholder journals and calls only</p>
+</div>
+</body>
+</html>
